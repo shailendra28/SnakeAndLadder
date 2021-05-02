@@ -3,11 +3,12 @@ public class SnakeAndLadder {
 	public static final int LADDER=1;
 	public static final int SNAKE=2;
     public static void main(String[] args) {
-			int position = 0;
+			int position = 0,  dieCount = 0;
 			System.out.println(" Current Position is : " + position);
 			
 			while(position < 100){
 			int die = (int)Math.floor( ( ( Math.random() * 10 ) % 6) + 1);
+			dieCount++;
 			int choice=(int)Math.floor((Math.random()*10)%3);
 			
 			
@@ -45,7 +46,7 @@ public class SnakeAndLadder {
 				break;
 				
 			default:
-				    System.out.println("No Play, Stay at the same position : " + position);
+				    System.out.println(" No Play, Stay at the same position : " + position);
 			}
 	    }	
 	}
