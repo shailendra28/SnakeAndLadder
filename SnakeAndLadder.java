@@ -34,7 +34,7 @@ public class SnakeAndLadder {
 				}
 				 break;
 				
-			    case SNAKE:
+			     case SNAKE:
 			    	
 				    System.out.println(" Current position is : " + die);
 				position -= die;
@@ -45,7 +45,7 @@ public class SnakeAndLadder {
 				    System.out.println(" Player got the snake, New position is : " + position);
 				break;
 				
-			default:
+			    default:
 				    System.out.println(" No Play, Stay at the same position : " + position);
 			}
 	    }	
